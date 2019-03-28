@@ -1,6 +1,25 @@
+const {
+  registerTracker,
+  getTracker,
+} = require('gatsby-plugin-tracking-consent');
+
+const trackerId = 'ga';
+const trackerLabel = 'Google Analytics';
+
+exports.onClientEntry = function() {
+  registerTracker({ id: trackerId, label: trackerLabel });
+}
+
 exports.onRouteUpdate = function({ location }) {
-  // Don't track while developing.
-  if (process.env.NODE_ENV === `production` && typeof ga === `function`) {
+  const tracker = getTracker(trackerId);
+  const consent = tracker && tracker.enabled;
+  if (
+    // Don't track without consent.
+    consent &&
+    // Don't track while developing.
+    process.env.NODE_ENV === `production` &&
+    typeof ga === `function`
+  ) {
     if (
       location &&
       typeof window.excludeGAPaths !== `undefined` &&
