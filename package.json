@@ -10,7 +10,8 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
-    "@babel/runtime": "^7.0.0"
+    "@babel/runtime": "^7.0.0",
+    "gatsby-plugin-tracking-consent": "git+https://github.com/orangecms/gatsby-plugin-tracking-consent.git#v0.0.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
