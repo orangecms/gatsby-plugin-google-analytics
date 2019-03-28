@@ -1,8 +1,11 @@
 {
   "name": "gatsby-plugin-google-analytics",
-  "description": "Gatsby plugin to add google analytics onto a site",
-  "version": "2.0.17",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Gatsby plugin for consensual Google Analytics tracking",
+  "version": "3.0.0",
+  "author": "Daniel Maslowski <info@orangecms.org",
+  "contributors": [
+    "Kyle Mathews <mathews.kyle@gmail.com>"
+  ],
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
