@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.0.0",
-    "gatsby-plugin-tracking-consent": "git+https://github.com/orangecms/gatsby-plugin-tracking-consent.git#v0.0.2"
+    "gatsby-plugin-tracking-consent": "github:orangecms/gatsby-plugin-tracking-consent#v0.0.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
